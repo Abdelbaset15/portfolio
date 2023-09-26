@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PORTFILO 2</title>
+</head>
+<body>
+
+    <header style="color: #0b2031;">
+        <div class="name"> <h2> abdelbaset </h2> </div>
+        <div class="pages">
+            <div> <a href="index.html">home</a> </div>
+            <div> <a style="color: deepskyblue;" href="about.html">about</a> </div>
+            <div> <a href="skills.html">skills</a> </div>
+            <div> <a href="contact.html">contact</a> </div>
+            <div> <a href="projects.html">projects</a> </div>
+        </div>
+    </header>      
+    
+    <main style="background-color: #0b2031;" > <h1><span> about </span> me </h1></main>
+
+    <div class="hoa">
+        <div class="phot"><img src="extra\my-photo-small.png" width="250px" height="500px"></div>
+        <div class="p_family">
+            <p> iam <span>ahmed abdelbaset </span> , iam a full <span>stack developer </span></p>
+            <p onclick="show1()"> programming languages that i learn &nabla;<span id="sp_a">(html,css,javascript) </span></p>
+            <p onclick="show2()"> courses that i take &nabla; <span id="sp_b">1-html and css with osama elzero on youtube<br> 2-python in new horizons <br> 3-html,css and javascript in new horizons </span></p>
+            <p onclick="show3()"> eduction &nabla; <span id="sp_c"> graduated from king marriott academy information systems in 2025 </span></p>
+        </div>
+        <div><button></div>
+    </div>
+
+    <script>
+        `use strict`
+
+        const show1 = function(){
+            sp_a.style.display='flex';
+        }
+
+        const show2 = function(){
+            sp_b.style.display='flex';
+        
+        }
+
+        const show3 = function(){
+            sp_c.style.display='flex';
+        }
+
+
+    </script>
+</body>
+</html>

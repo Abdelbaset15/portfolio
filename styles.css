@@ -1,0 +1,1036 @@
+*{
+padding:0%;
+margin:0%;
+border: none;
+outline: none;
+box-sizing: border-box;
+transition: 0.3s all;
+}
+
+html,body{
+height:100%;
+width:100%;
+background-color:#0F0F0F;
+color:white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+display:flex;
+flex-direction:row;
+gap:200px;
+justify-content:space-evenly;
+text-transform:capitalize;
+height: 50px;
+}
+
+header .name{
+    display: flex;
+}
+
+header .name h2{
+    display: flex;
+    align-items: center;
+}
+
+/* start of name animtion */
+header .name span:nth-child(1){ animation: spa1  infinite 1s;}
+@keyframes spa1{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(2){ animation: spa2  infinite 2s ;}
+@keyframes spa2{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(3){ animation: spa3  infinite 3s ;}
+@keyframes spa3{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(4){ animation: spa4  infinite 4s ;}
+@keyframes spa4{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(5){ animation: spa5  infinite 5s ;}
+@keyframes spa5{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(6){ animation: spa6  infinite 6s ;}
+@keyframes spa6{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(7){ animation: spa7  infinite 7s ;}
+@keyframes spa7{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(8){ animation: spa8  infinite 8s ;}
+@keyframes spa8{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(9){ animation: spa9  infinite 9s ;}
+@keyframes spa9{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+header .name span:nth-child(10){ animation: spa10  infinite 10s  ;}
+@keyframes spa10{0%{color: white;} 25%{color: deepskyblue;} 30%{color: white;} 40%{color: white;} 50%{color: white;} 60%{color: white;} 70%{color: white;} 80%{color: white;}}
+/* end of name animtion */
+
+header .pages{
+display:flex;
+flex-direction:row;
+gap:20px;
+justify-content:space-between;
+align-items: center;
+width:50%;;
+}
+
+header .pages div a{
+display:flex;
+gap:10px;
+text-decoration:none;
+color:white;
+}
+
+header .pages div a:hover{
+    color: deepskyblue;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 87%;
+    margin-left: 80px;
+    overflow: hidden;
+}
+
+article .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 40px;
+    margin-left: 80px;
+    text-transform: capitalize;
+    position: relative;
+    right: 800px;
+    animation: lif 1s forwards ease-in-out ;
+}   
+
+@keyframes lif{
+    from{right: 800px;}
+    to{right: 1px;}
+}
+
+@keyframes title{
+    25%{ color:rgba(0, 0, 0, 0.76);}
+    50%{ color:deepskyblue; }
+    75%{ color:deepskyblue;}
+}
+
+@keyframes line{
+    10%{width: 20px; ;}
+    20%{width: 30px;}
+    30%{width: 40px;;}
+    40%{width: 60px; ;}
+    50%{width: 100px; ;}
+    60%{width: 150px; ;}
+    70%{width: 190px;}
+    80%{width: 250px;}
+    90%{width: 300px; ;}
+    100%{width: 360px; ;}
+}
+
+article div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 5px;
+}
+
+article div:first-of-type{
+    flex-direction: column;
+    gap: 3px;
+}
+
+article div span{
+    border-bottom: solid 1px;
+    width: 4px;
+    animation: line 1s forwards 2s ;
+    animation-delay: -1;
+}
+
+article div h1{
+    font-size: 36px;
+}
+
+article div h1:hover{
+    font-size: 50px;
+}
+
+article div h2{
+    color: deepskyblue;
+    animation: title  3s infinite 3s;
+}
+
+article div p{
+    font-size: 14px;
+}
+
+article div button{
+    width: 70px;
+    height: 25px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+article div button:first-of-type{
+    background-color: deepskyblue;
+    border: solid deepskyblue 1px;
+}
+
+article div button:first-of-type:hover{
+    background-color:rgba(0, 0, 0, 0.76) ;
+    color: deepskyblue;
+    transition: 1s;
+    transform: scale(1.3 , 1.3);
+}
+
+article div button:last-of-type:hover{
+    background-color: deepskyblue;
+    color:rgba(0, 0, 0, 0.76) ;
+    transition: 1s;
+    transform: scale(1.3 , 1.3);
+}
+
+article div button:last-of-type{
+    background-color:rgba(0, 0, 0, 0.76) ;
+    color: deepskyblue;
+    border: solid deepskyblue 1px;
+}
+
+article .my-img{
+    display: flex;
+    position: relative;
+    width:580px ;
+}
+
+article div img{
+    position: fixed;
+    width:580px ;
+    height:600px ;
+    opacity: 0.8;
+    filter: contrast(120%);
+    animation: tras 2s 1 forwards ease-in  ;
+    top: -2000px;
+}
+
+article div img:hover{
+    opacity: 0.5;
+}
+
+@keyframes tras{
+    from{top: -800px;}
+    to{ top: 120px;}
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .call1 ,.call2{
+    display: flex;
+    justify-content: center;
+}
+
+footer .call1 a{
+    display: flex;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: solid deepskyblue 1.5px;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: deepskyblue;
+}
+
+footer .call2 i{
+    display: flex;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: solid deepskyblue 1.5px;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: deepskyblue;
+}
+
+footer .call2 i:hover{
+    cursor: pointer;
+}
+
+.w_p{
+    color: rgba(255, 255, 255, 0.685);
+    padding-left: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    color: deepskyblue;
+    font-size: 25px;
+    text-transform: capitalize;
+    height: 100px;
+    background-color: #0F2C44;
+}
+
+main h1{
+    position: relative;
+    bottom: 400px;
+    animation: tit 1.2s forwards ease-out; 
+}
+
+@keyframes tit{
+    from{bottom: 400px;}
+    to{bottom: 0px;}
+}
+
+main span{
+    color: white;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 78%;
+    width: 100%;
+    background-color: #0F2C44;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+aside .c_skills{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    height: 60%;
+    position: relative;
+    right: 800px;
+    animation: aa 1s ease-in-out forwards 1s;
+}
+
+@keyframes aa{
+    from{right: 800px;}
+    to{right: 0px;}
+}
+
+aside .p_skills{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    height: 60%;
+    position: relative;
+    right: -800px;
+    animation: ab 1s ease-in-out forwards 1s;
+}
+
+@keyframes ab{
+    from{right: -800px;}
+    to{right: 0px;}
+}
+
+aside .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: solid deepskyblue 1px;
+    border-radius: 6px;
+    height: 100%;
+}
+
+aside .main .q{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside .main .w{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 95%;
+    border: solid deepskyblue 1px;
+    border-radius: 6px;
+    position: relative;
+    left: 13px;
+    padding: 5px;
+}
+
+aside .main .w  span{
+    background-color: deepskyblue;
+    height: 80%;
+    width: 0;
+}
+
+aside .main .w .a{
+    animation: loding_a 1.5s ease-in 2s forwards;
+}
+
+aside .main .w .b{
+    animation: loding_b 1.5s ease-in 2s forwards;
+}
+
+aside .main .w .c{
+    animation: loding_c 1.5s ease-in 2s forwards;
+}
+
+aside .main .w .d{
+    animation: loding_d 1.5s ease-in 2s forwards;
+}
+aside .main .w .e{
+    animation: loding_e 1.5s ease-in 2s forwards;   
+}
+
+aside .main .w .f{
+    animation: loding_f 1.5s ease-in 2s forwards;   
+}
+
+@keyframes loding_a{
+    from{width: 0;}
+    to{width: 90%;}
+}
+
+@keyframes loding_b{
+    from{width: 0;}
+    to{width: 70%;}
+}
+
+@keyframes loding_c{
+    from{width: 0;}
+    to{width: 60%;}
+}
+
+@keyframes loding_d{
+    from{width: 0;}
+    to{width: 95%;}
+}
+
+@keyframes loding_e{
+    from{width: 0;}
+    to{width: 80%;}
+}
+
+@keyframes loding_f{
+    from{width: 0;}
+    to{width: 85%;}
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    height: 110%;
+    text-transform: capitalize;
+    padding-top: 40px;
+    background-color: #0F0F0F;
+}
+nav .pr1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    animation: opc 1s forwards 2s ease-in;
+}
+
+@keyframes opc{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+nav .pr1 a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+nav .pr1 a:hover{
+    color: darkred;
+}
+
+nav .pr1 img:hover{
+    transform: scale(1.5);
+}
+
+nav .pr2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    animation: opc 1s forwards 3s ease-in;
+}
+
+@keyframes opc{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+nav .pr2 a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+nav .pr2 a:hover{
+    color: darkred;
+}
+
+nav .pr2 img:hover{
+    transform: scale(1.5);
+}
+
+nav .pr3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    animation: opc 1s forwards 4s ease-in;
+}
+
+@keyframes opc{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+nav .pr3 a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+nav .pr3 a:hover{
+    color: darkred;
+}
+
+nav .pr3 img:hover{
+    transform: scale(1.5);
+}
+
+nav .pr4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    animation: opc 1s forwards 4s ease-in;
+}
+
+@keyframes opc{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+nav .pr4 a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+nav .pr4 a:hover{
+    color: darkred;
+}
+
+nav .pr4 img:hover{
+    transform: scale(1.5);
+}
+
+nav .pr5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    animation: opc 1s forwards 4s ease-in;
+}
+
+@keyframes opc{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+nav .pr5 a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+nav .pr5 a:hover{
+    color: darkred;
+}
+
+nav .pr5 img:hover{
+    transform: scale(1.5);
+}
+
+
+.last{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+
+.last #par5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+}
+
+
+.last #par5 div input{ 
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background-color: #0b2031;
+    border: solid deepskyblue 1px;
+    color: rgba(255, 255, 255, 0.644);
+    text-transform: capitalize;
+    padding-left: 7px;
+}
+
+.last #par5 div .in3{
+    width: 610px;
+}
+
+
+.last #par5 div .in4{
+    width: 610px;
+    height: 250px;
+    text-align:center;
+}
+
+.last .lonley button{
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    background-color: deepskyblue;
+    transform: scale(-1);
+    animation: ne 1s forwards 3s;
+}
+
+@keyframes ne{
+    from{transform: scale(-1);}
+    to{transform: scale(1);}
+}
+
+.last .lonley button:hover{
+    cursor: pointer;
+}
+
+@keyframes mov1{
+    from{right: 150%;}
+    to{right: 0;}
+}
+
+@keyframes mov2{
+    from{left: 150%;}
+    to{left: 0;}
+}
+
+@keyframes mov3{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes mov4{
+    from{top: 150%;}
+    to{top: 0;}
+}
+
+#ch1{
+    position: relative;
+    right: 150%;
+    animation: mov1 1s forwards ease-in-out 1s ;
+}
+
+#ch2{
+    position: relative;
+    left: 150%;
+    animation: mov2 1s forwards ease-in-out 1s ;
+}
+
+#ch3{
+    opacity: 0;
+    animation: mov3 1s forwards ease-in-out 3s ;
+}
+
+#ch4{
+    position: relative;
+    top: 150%;
+    animation: mov4 1s forwards ease-in-out 2s ;
+}
+
+.hoa{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    background-color: #0b2031;
+    position: relative;
+    text-transform: capitalize;
+    overflow: auto;
+}
+
+.hoa div:first-child {
+    width: 250px;
+    height: 20px;
+    border-radius: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #0F0F0F;
+    animation: hei 2s forwards ease-out 4s;
+    transform: scale(.8);
+}
+
+@keyframes hei{
+    from{height: 20px;}
+    to{height: 250px;}
+}
+
+.hoa div img{
+    position: relative;
+    bottom: 100px;
+    right: 12px;
+    opacity: 0.9;
+    filter: contrast(120%);
+}
+
+.hoa .p_family{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hoa .p_family p{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.hoa .p_family p:first-child{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    font-size: 30px;
+    position: relative;
+    right: 200%;
+    animation: trans1 1s forwards ease-in 1.5s;
+}
+
+.hoa .p_family p:first-child span{
+    display: flex;
+    flex-direction: row;
+    color: dodgerblue;
+}
+
+.hoa .p_family p span{
+    display: none;
+    padding-left: 10px;
+}
+
+.hoa .p_family p span:hover{
+    color: white;
+}
+
+/* start of p animation */
+@keyframes trans1{
+    from{right: 200%;}
+    to{right: 0;}
+}
+
+@keyframes trans2{
+    from{right: 170%;}
+    to{right: 0;}
+}
+
+.hoa .p_family p:nth-child(2){
+    position: relative;
+    right: 170%;
+    animation: trans2 1s forwards ease-in 2s;
+}
+
+@keyframes trans3{
+    from{right: 150%;}
+    to{right: 0;}
+}
+
+.hoa .p_family p:nth-child(3){
+    position: relative;
+    right: 150%;
+    animation: trans3 1s forwards ease-in 2.5s;
+}
+
+@keyframes trans4{
+    from{right: 150%;}
+    to{right: 0;}
+}
+
+.hoa .p_family p:nth-child(4){
+    position: relative;
+    right: 150%;
+    animation: trans4 1s forwards ease-in 3s;
+}
+
+.hoa .p_family p:nth-child(2):hover{
+    color: red;
+}
+.hoa .p_family p:nth-child(3):hover{
+    color: red;
+}
+.hoa .p_family p:nth-child(4):hover{
+    color: red;
+}
+/* end of p animation */
+
+@media (min-width:600px) and (max-width:800px) {
+
+    header{
+        width: 70%;
+        justify-content: center;
+    }
+
+    header .pages{
+        justify-content: center;
+        gap: 40px;
+    }
+
+    header .name h2{
+        display: none;
+    }
+
+    @keyframes tras{
+        from{top: -800px;}
+        to{ top: 250px;}
+    }
+
+    article{
+        width:100% ;
+        margin-left: 50px;
+    }
+    
+    article .parent{
+        margin-left: 0%;
+ 
+    }   
+    
+    article div h1{
+        font-size: 33px;
+    }
+    
+    article div h1:hover{
+        font-size: 40px;
+    }
+    
+    article div h2{
+        color: deepskyblue;
+        animation: title  3s infinite 3s;
+        font-size: 25px;
+    }
+    
+    article div p{
+        font-size: 12px;
+    }
+
+    @keyframes line{
+        10%{width: 20px; ;}
+        20%{width: 30px;}
+        30%{width: 40px;;}
+        40%{width: 60px; ;}
+        50%{width: 100px; ;}
+        60%{width: 150px; ;}
+        100%{width: 190px;}
+    }
+
+    article div img{
+        position: relative;
+        top: 70px;
+        width:480px ;
+        height:500px ;
+    }
+
+    @keyframes tras{
+        from{top: -800px;}
+        to{ top: 20px;}
+    }
+
+    .hoa .p_family p:first-child{
+        font-size: 22px;
+    }
+
+    .hoa .p_family p{
+        font-size: 15px;
+    }
+
+    aside{
+        overflow: auto;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    aside .c_skills{
+        width: 70%;
+    }
+
+    aside .p_skills{
+        width: 70%;
+    }
+    
+    .last #par5 div .in3{
+        width: 300px;
+    }
+
+    .last #par5 div .in4{
+        width: 300px;
+    }
+    
+}
+
+@media (min-width:200px) and (max-width:600px){
+    header{
+        width: 100%;
+        justify-content: center;
+    }
+
+    header .pages{
+        justify-content: center;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    header .name {
+        display: none;
+    }
+
+    header .name span{
+        display: none;
+    }
+
+    article{
+        width:100% ;
+        height: inherit;
+        margin-left: 2%;
+    }
+    
+    article .parent{
+        margin-left: 0%;
+ 
+    }   
+    
+    article div h1{
+        font-size: 26px;
+    }
+    
+    article div h1:hover{
+        font-size: 40px;
+    }
+    
+    article div h2{
+        color: deepskyblue;
+        animation: title  3s infinite 3s;
+        font-size: 20px;
+    }
+    
+    article div p{
+        font-size: 10px;
+    }
+
+    @keyframes line{
+        10%{width: 20px; ;}
+        20%{width: 30px;}
+        30%{width: 40px;;}
+        40%{width: 60px; ;}
+        50%{width: 100px; ;}
+        60%{width: 150px; ;}
+        100%{width: 190px;}
+    }
+
+    article div img{
+        position: relative;
+        top: 70px;
+        right: 70px;
+        width:350px ;
+        height:400px ;
+    }
+    
+    .hoa .p_family p:first-child{
+        font-size: 16px;
+    }
+
+    .hoa .p_family p{
+        font-size: 12px;
+    }
+
+    aside{
+        overflow: auto;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main{
+        padding-right: 10px;
+    }
+
+    aside .c_skills{
+        width: 80%;
+    }
+    
+    aside .p_skills{
+        width: 80%;
+    }
+
+    .last #par5 div input{
+        width: 200px;
+    }
+
+    .last #par5 div .in3{
+        width: 200px;
+    }
+
+    .last #par5 div .in4{
+        width: 200px;
+    }
+}
+
+
+
